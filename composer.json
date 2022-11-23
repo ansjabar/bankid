@@ -1,0 +1,34 @@
+{
+	"name": "ansjabar/laravel-bankid",
+	"description": "Laravel handler to identify user through BankID",
+    "keywords": ["laravel", "bankid"],
+	"license": "MIT",
+	"authors": [
+        {
+            "name": "Ans Jabar",
+            "email": "ans.jabar@gmail.com"
+        }
+	],
+    "support": {
+        "issues": "https://github.com/ansjabar/laravel-bankid/issues",
+        "source": "https://github.com/ansjabar/laravel-bankid"
+    },
+	"require": {
+		"php": "^7.0|^8.0",
+        "dimafe6/bank-id": "^2.1"
+		
+	},
+	"require-dev": {
+		"ext-curl": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"AnsJabar\\LaravelBankId\\": "src/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [ "AnsJabar\\LaravelBankId\\BankIdServiceProvider" ]
+		}
+	}
+}
